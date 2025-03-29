@@ -128,3 +128,85 @@ input {
     display: flex;
     justify-content: space-between;
 }
+
+.error {
+    color: red;
+    display: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: hsl(228, 45%, 44%);
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+
+/* ---------------RESPONSIVE------------------ */
+@media only screen and (min-width: 1000px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 415px;
+        padding: 9px;
+        background-position: 17px 18px;
+    }
+
+    .tip-calculator {
+        width: 999px;
+        flex-direction: row;
+        border-radius: 1.4rem;
+        padding: 2.3rem;
+        height: 479px;
+    }
+
+    .partOne{
+        margin-top: 1rem;
+        margin-left: 1.2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bill-input{
+        margin-bottom: 3.4rem;
+    }
+
+    .tip{
+        grid-template-columns: 135px 135px 135px;
+        row-gap: 1.2em;
+        column-gap: 17px;
+        margin-bottom: 3.2rem;
+    }
+
+    .tips{
+        height: 56px;
+    }
+
+    .result {
+        margin-left: auto;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        padding: 48px 38px;
+    }
+
+    .amount {
+        font-size: 55px;
+    }
+
+    .reset{
+        padding: 13px 0 13px 0;
+        margin-top: auto;
+    }
+}
